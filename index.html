@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options Trading Position Sizing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Position Sizing Calculator</h1>
+        
+        <form id="position-sizing-form">
+            <label for="entry-price">Entry Price:</label>
+            <input type="number" id="entry-price" placeholder="Enter Entry Price" required>
+
+            <label for="stop-loss">Stop Loss:</label>
+            <input type="number" id="stop-loss" placeholder="Enter Stop Loss" required>
+
+            <label for="risk">Risk Per Trade:</label>
+            <input type="number" id="risk" placeholder="Enter Risk Amount" required>
+
+            <button type="submit">Calculate Position Size</button>
+        </form>
+
+        <div id="results" class="results">
+            <h2>Position Size for Different Indexes:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Lots</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nifty</td>
+                        <td id="nifty-result"></td>
+                    </tr>
+                    <tr>
+                        <td>Bank Nifty</td>
+                        <td id="banknifty-result"></td>
+                    </tr>
+                    <tr>
+                        <td>FinNifty</td>
+                        <td id="finnifty-result"></td>
+                    </tr>
+                    <tr>
+                        <td>Nifty Midcap Select</td>
+                        <td id="midcap-result"></td>
+                    </tr>
+                    <tr>
+                        <td>Sensex</td>
+                        <td id="sensex-result"></td>
+                    </tr>
+                    <tr>
+                        <td>Bankex</td>
+                        <td id="bankex-result"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Quantity</strong></td>
+                        <td id="quantity-result"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
