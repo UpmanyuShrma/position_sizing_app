@@ -11,12 +11,12 @@ document.getElementById('position-sizing-form').addEventListener('submit', funct
         const quantity = risk / (entryPrice - stopLoss);
 
         // Calculate for each index fund, rounding down to the nearest integer
-        const nifty = Math.floor(quantity / 25);
-        const banknifty = Math.floor(quantity / 15);
-        const finnifty = Math.floor(quantity / 25);
-        const midcap = Math.floor(quantity / 50);
-        const sensex = Math.floor(quantity / 10);
-        const bankex = Math.floor(quantity / 15);
+        const nifty = Math.floor(quantity / 75);
+        const banknifty = Math.floor(quantity / 30);
+        const finnifty = Math.floor(quantity / 65);
+        const midcap = Math.floor(quantity / 120);
+        const sensex = Math.floor(quantity / 20);
+        const bankex = Math.floor(quantity / 30);
 
         // Function to display "Don't Buy" if result < 1
         function displayResult(value) {
